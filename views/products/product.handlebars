@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="product-page">
+        <a href="/products" class="back-button">Voltar</a>
+        <h1>{{product.name}}</h1>
+        <p>Preço: R$ {{product.price}}</p>
+        <img src="{{product.image}}" alt="{{product.name}}">
+        <p>{{product.description}}</p>
+        
+        <div class="remove-button-container">
+            <form action="/products/remove/{{product._id}}" method="post">
+                <input type="submit" value="Remover" class="btn">
+            </form>
+        </div>
+    </div>
+</div>
